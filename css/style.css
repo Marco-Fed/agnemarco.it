@@ -239,6 +239,16 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #fff !important;
 }
 
+.fh5co-nav .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.fh5co-nav .transition {
+  transition: all 0.3s ease-in-out;
+}
+
 #fh5co-counter,
 #fh5co-event,
 .fh5co-bg {
