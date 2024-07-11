@@ -11,9 +11,15 @@
 *
 * ======================================================= */
 
-html {
+/* html {
   scroll-behavior: smooth;
+} */
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
 }
+
 
 body {
   font-family: "Work Sans", Arial, sans-serif;
