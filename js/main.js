@@ -33,6 +33,21 @@
 			.find('li')
 			.removeClass('has-dropdown');
 
+
+			$('#fh5co-offcanvas a[href*="#"]').on('click', function(event) {
+			    var target = $(this.getAttribute('href'));
+			    if( target.length ) {
+			        event.preventDefault();
+			        $('html, body').stop().animate({
+			            scrollTop: target.offset().top
+			        }, 100);
+			        // Close offcanvas menu after click (if necessary)
+			        $('body').removeClass('offcanvas');
+			        $('.js-fh5co-nav-toggle').removeClass('active');
+			    }
+			});
+
+
 		// Hover dropdown menu on mobile
 		$('.offcanvas-has-dropdown').mouseenter(function(){
 			var $this = $(this);
@@ -164,7 +179,7 @@
 
 			$('html, body').animate({
 				scrollTop: $('html').offset().top
-			}, 500, 'easeInOutExpo');
+			}, 100, 'easeInOutExpo');
 
 			return false;
 		});
