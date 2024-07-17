@@ -118,8 +118,8 @@
                 year: 2025,
                 month: 1,
                 day: 25,
-                hours: 10,
-                minutes: 30,
+                hours: 11,
+                minutes: 00,
                 seconds: 0,
                 words: {
                     days: 'giorn',
@@ -160,8 +160,8 @@
           2025,
           1-1,
           25,
-          // 10,
-          // 30,
+          // 11,
+          // 00,
           // 0
             // parameters.year,
             // parameters.month - 1,
