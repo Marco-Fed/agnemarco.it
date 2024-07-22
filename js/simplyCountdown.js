@@ -119,17 +119,14 @@
                 month: 1,
                 day: 25,
                 hours: 11,
-                minutes: 00,
+                minutes: 0,
                 seconds: 0,
                 words: {
-                    days: 'giorn',
-                    hours: 'or',
-                    minutes: 'minut',
+                    days: 'day',
+                    hours: 'hour',
+                    minutes: 'minute',
                     seconds: 'second',
-                    pluralLetterI: 'i',
-                    singularLetterO: 'o',
-                    singularLetterA: 'a',
-                    pluralLetterE: 'e'
+                    pluralLetter: 's'
                 },
                 plural: true,
                 inline: false,
@@ -142,7 +139,7 @@
                 sectionClass: 'simply-section',
                 amountClass: 'simply-amount',
                 wordClass: 'simply-word',
-                zeroPad: true
+                zeroPad: false
             }, args),
             interval,
             targetDate,
@@ -157,15 +154,12 @@
             cd = document.querySelectorAll(elt);
 
         targetTmpDate = new Date(
-          2025,
-          1-1,
-          25,
-          // 11,
-          // 00,
-          // 0
             // parameters.year,
             // parameters.month - 1,
             // parameters.day,
+            2025,
+            0,
+            25,
             parameters.hours,
             parameters.minutes,
             parameters.seconds
@@ -224,20 +218,20 @@
 
                 if (parameters.plural) {
                     dayWord = days > 1
-                        ? parameters.words.days + parameters.words.pluralLetterI
-                        : parameters.words.days + parameters.words.singularLetterO;
+                        ? parameters.words.days + parameters.words.pluralLetter
+                        : parameters.words.days;
 
                     hourWord = hours > 1
-                        ? parameters.words.hours + parameters.words.pluralLetterE
-                        : parameters.words.hours + parameters.words.singularLetterA;
+                        ? parameters.words.hours + parameters.words.pluralLetter
+                        : parameters.words.hours;
 
                     minuteWord = minutes > 1
-                        ? parameters.words.minutes + parameters.words.pluralLetterI
-                        : parameters.words.minutes + parameters.words.singularLetterO;
+                        ? parameters.words.minutes + parameters.words.pluralLetter
+                        : parameters.words.minutes;
 
                     secondWord = seconds > 1
-                        ? parameters.words.seconds + parameters.words.pluralLetterI
-                        : parameters.words.seconds + parameters.words.singularLetterO;
+                        ? parameters.words.seconds + parameters.words.pluralLetter
+                        : parameters.words.seconds;
 
                 } else {
                     dayWord = parameters.words.days;
