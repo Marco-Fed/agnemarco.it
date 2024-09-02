@@ -102,7 +102,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   margin: 0;
   padding: 0;
@@ -115,6 +115,20 @@ h1, h2, h3, h4, h5, h6, figure {
     padding: 20px 0;
   }
 }
+
+.fh5co-nav.scrolled {
+  background-color: rgba(17, 94, 9, 0.9);/*#333;  New background color */
+  padding: 10px 0; /* New padding */
+  animation: fadeInDown 0.5s ease;
+  /* animation: fadeOutUp 0.5s ease; */
+}
+@media screen and (max-width: 768px) {
+  .fh5co-nav.scrolled {
+    padding: 20px 0;
+  }
+}
+
+
 .fh5co-nav #fh5co-logo {
   font-size: 40px;
   margin: 0;
@@ -326,6 +340,7 @@ h1, h2, h3, h4, h5, h6, figure {
   height: 900px;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #115e09;
   position: relative;
   width: 100%;
 }
@@ -990,6 +1005,7 @@ form label {
     transform: scale(1);
   }
 }
+
 .simply-countdown > .simply-section > div {
   /* countdown block inner div */
   display: table-cell;
@@ -1576,11 +1592,22 @@ form label {
   outline: none;
 }
 
+
 .fh5co-nav-toggle {
-  width: 25px;
-  height: 25px;
-  cursor: pointer;
-  text-decoration: none;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  z-index: 21;
+  padding: 6px 0 0 0;
+  display: block;
+  margin: 0 auto;
+  display: none;
+  height: 44px;
+  width: 44px;
+  z-index: 2001;
+  border-bottom: none !important;
+  opacity: 1; /* Ensure it's fully visible */
+  transition: opacity 0.3s ease; /* Smooth transition for opacity */
 }
 .fh5co-nav-toggle.active i::before, .fh5co-nav-toggle.active i::after {
   background: #444;
@@ -1656,20 +1683,6 @@ form label {
   transform: rotateZ(-45deg);
 }
 
-.fh5co-nav-toggle {
-  position: absolute;
-  right: 0px;
-  top: 10px;
-  z-index: 21;
-  padding: 6px 0 0 0;
-  display: block;
-  margin: 0 auto;
-  display: none;
-  height: 44px;
-  width: 44px;
-  z-index: 2001;
-  border-bottom: none !important;
-}
 @media screen and (max-width: 768px) {
   .fh5co-nav-toggle {
     display: block;
@@ -1873,3 +1886,37 @@ form label {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/* Gallery styles */
+body{
+	margin:0;
+	padding:0;
+}
+.container{
+	width:90%
+	margin:10px auto;
+}
+.portfolio-menu{
+	text-align:center;
+}
+.portfolio-menu ul li{
+	display:inline-block;
+	margin:0;
+	list-style:none;
+	padding:10px 15px;
+	cursor:pointer;
+	-webkit-transition:all 05s ease;
+	-moz-transition:all 05s ease;
+	-ms-transition:all 05s ease;
+	-o-transition:all 05s ease;
+	transition:all .5s ease;
+}
+
+.portfolio-item{
+	width:100%;
+}
+.portfolio-item .item{
+	/* width:303px; */
+	float:left;
+	margin-bottom:10px;
+}
