@@ -160,15 +160,15 @@
 			<div class="row">
 				<div class="col-md-6 col-md-push-6 animate-box">
 					<h3>Get In Touch</h3>
-					<form action="#">
+					<!-- <form action="sendmail.php" method="POST">
 						<div class="row form-group">
 							<div class="col-md-6">
 								<label for="fname">First Name</label>
-								<input type="text" id="fname" class="form-control" placeholder="Your firstname">
+								<input type="text" id="fname" class="form-control" placeholder="Your firstname" name="name">
 							</div>
 							<div class="col-md-6">
 								<label for="lname">Last Name</label>
-								<input type="text" id="lname" class="form-control" placeholder="Your lastname">
+								<input type="text" id="lname" class="form-control" placeholder="Your lastname" name="surnname">
 							</div>
 						</div>
 
@@ -182,31 +182,54 @@
 						<div class="row form-group">
 							<div class="col-md-12">
 								<label for="subject">Subject</label>
-								<input type="text" id="subject" class="form-control" placeholder="Your subject of this message">
+								<input type="text" id="subject" class="form-control" placeholder="Your subject of this message" name="subject">
 							</div>
 						</div>
 
 						<div class="row form-group">
 							<div class="col-md-12">
 								<label for="message">Message</label>
-								<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Write us something"></textarea>
+								<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Write us something" name="message"></textarea>
 							</div>
 						</div>
 						<div class="form-group">
 							<input type="submit" value="Send Message" class="btn btn-primary">
 						</div>
 
-					</form>
+					</form> -->
+
+					<form id="contact-form" method="POST" action="PHP/sendmail.php">
+  <div class="form-row form-error" style="display:none;"></div>
+  <div class="form-row">
+    <label for="contact-form-name">Name:</label>
+    <input id="contact-form-name" class="form-input" type="text" name="name" required>
+  </div>
+  <div class="form-row">
+    <label for="contact-form-email">Email:</label>
+    <input id="contact-form-email" class="form-input" type="email" name="email" required>
+  </div>
+  <div class="form-row">
+    <label for="contact-form-phone">surname:</label>
+    <input id="contact-form-phone" class="form-input" type="tel" name="surname">
+  </div>
+  <div class="form-row">
+    <label for="contact-form-message">Message:</label>
+    <textarea id="contact-form-message" class="form-input" name="message" required></textarea>
+  </div>
+  <button type="submit">Submit</button>
+</form>
+
+
 				</div>
 				<div class="col-md-5 col-md-pull-5 animate-box">
 
 					<div class="fh5co-contact-info">
-						<h3>Contact Information</h3>
+						<h3>Information di contatto</h3>
 						<ul>
-							<li class="address">198 West 21th Street, <br> Suite 721 New York NY 10016</li>
-							<li class="phone"><a href="tel://1234567920">+ 1235 2355 98</a></li>
-							<li class="email"><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
-							<li class="url"><a href="http://gettemplates.co">gettemplates.co</a></li>
+							<li class="address">Parrocchia San Nicola in Dergano, <br> Via Livigno, 21 – Milano</li>
+							<li class="phone"><a href="tel://00393318789856">+ 39 331 8789856</a></li>
+							<li class="email"><a href="mailto:info@agnemarco.it">info@agnemarco.it</a></li>
+							<li class="url"><a href="http://agnemarco.it">agnemarco.it</a></li>
 						</ul>
 					</div>
 

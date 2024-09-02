@@ -61,6 +61,7 @@
 
 	<!-- AddEvent script -->
 	<script src="js/AddEvent Settings.js"></script>
+	<script src="js/gallery_popup.js"></script>
 <!-- <script type="text/javascript" src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script> -->
 
 	<!-- FOR IE9 below -->
@@ -72,32 +73,24 @@
 
 
 	<!-- <body >-->
-		<body data-spy="scroll" data-target=".fh5co-nav" data-offset="70">
 
 	<div class="fh5co-loader"></div>
 
 	<div id="page">
+		<body data-spy="scroll" data-target=".fh5co-nav" data-offset="70">
 	<nav class="fh5co-nav" role="navigation">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-2">
+		<!-- <div class="container"> -->
+			<!-- <div class="row"> -->
+				<!-- <div class="col-xs-2">
 					<div id="fh5co-logo"><a href="index.html">Matrimonio<strong>.</strong></a></div>
-				</div>
-				<div class="col-xs-10 text-right menu-1">
+				</div> -->
+				<div class="col-xs text-center menu-1">
 					<ul>
 						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="#fh5co-event">Dove e quando</a></li>
 						<li><a href="#fh5co-couple-story">La nostra storia</a></li>
 						<li class="has-dropdown">
-							<a href="services.html">Services</a>
-							<ul class="dropdown">
-								<li><a href="#">Web Design</a></li>
-								<li><a href="#">eCommerce</a></li>
-								<li><a href="#">Branding</a></li>
-								<li><a href="#">API</a></li>
-							</ul>
-						</li>
-						<li class="has-dropdown">
-							<a href="gallery.html">Gallery</a>
+							<a href="#fh5co-gallery">Galleria</a>
 							<ul class="dropdown">
 								<li><a href="#">HTML5</a></li>
 								<li><a href="#">CSS3</a></li>
@@ -105,14 +98,15 @@
 								<li><a href="#">jQuery</a></li>
 							</ul>
 						</li>
+						<li><a href="#fh5co-testimonial">Dicono di noi</a></li>
+						<li><a href="#fh5co-started">RSVP</a></li>
 						<li><a href="contact.html">Contact</a></li>
 					</ul>
 				</div>
-			</div>
+			<!-- </div> -->
 
-		</div>
+		<!-- </div> -->
 	</nav>
-
 
 
 	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/img_bg_2.jpg);" data-stellar-background-ratio="2">
@@ -122,19 +116,19 @@
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1>Marco &amp; Agne</h1>
+							<h1>Marco &amp; Agnese</h1>
 							<h2>Ci sposiamo!</h2>
 							<div class="simply-countdown simply-countdown-one"></div>
 							<!-- <p><a href="#" class="btn btn-default btn-sm addeventatc">Save the date -->
 
 							<!-- <div title="Add to Calendar" class="addeventatc"> -->
 							<p><a  title="Add to Calendar" class="addeventatc">Save the date
-						    <span class="start">25-01-2025 10:45</span>
+						    <span class="start">25-01-2025 10:30</span>
 						    <span class="end">25-01-2025 13:00</span>
 						    <span class="timezone">Europe/Rome</span>
 						    <span class="title">Matrimonio Marco&Agne</span>
 						    <span class="description"></span>
-						    <span class="location">Chiesa Parrocchiale di San Nicola Vescovo In Dergano, Milano</span>
+						    <span class="location">Chiesa di Santa Maria delle Grazie, Milano</span>
 							<!-- </div> -->
 							</a></p>
 
@@ -145,6 +139,15 @@
 			</div>
 		</div>
 	</header>
+
+
+		<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		</head>
+
+	<!-- <body >-->
 
 	<div id="fh5co-couple">
 		<div class="container">
@@ -208,7 +211,7 @@
 										<span>Sabato 25</span>
 										<span>Gennaio, 2025</span>
 									</div>
-									<p>Ci sposeremo nella Chiesa Parrocchiale di San Nicola Vescovo In Dergano a Milano. Per maggiori info su luogo e parcheggi:</p>
+									<p>Ci sposeremo nella chiesa di San Nicola in Dergano a Milano. Per maggiori info su luogo e parcheggi:</p>
 									<a href="Cerimonia.html" class="link_semplice">Ulteriori dettagli >></a>
 								</div>
 							</div>
@@ -294,8 +297,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<span>Our Memories</span>
-					<h2>Wedding Gallery</h2>
+					<span>Galleria</span>
+					<h2>Un po' di nostre foto</h2>
 					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 				</div>
 			</div>
@@ -304,89 +307,72 @@
 					<ul id="fh5co-gallery-list">
 
 						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-1.jpg); ">
-						<a href="images/gallery-1.jpg">
+						<a href="images/gallery-1.jpg" class="popup-btn" title="">
 							<div class="case-studies-summary">
-								<span>14 Photos</span>
-								<h2>Two Glas of Juice</h2>
 							</div>
 						</a>
 					</li>
 					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-2.jpg); ">
-						<a href="#" class="color-2">
+						<a href="images/gallery-2.jpg" class="popup-btn" title="">
 							<div class="case-studies-summary">
-								<span>30 Photos</span>
-								<h2>Timer starts now!</h2>
 							</div>
 						</a>
 					</li>
 
-
 					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-3.jpg); ">
-						<a href="#" class="color-3">
+						<a href="images/gallery-3.jpg" class="popup-btn" title="">
 							<div class="case-studies-summary">
-								<span>90 Photos</span>
-								<h2>Beautiful sunset</h2>
 							</div>
 						</a>
 					</li>
 					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-4.jpg); ">
-						<a href="#" class="color-4">
+						<a href="images/gallery-4.jpg" class="popup-btn" title="">
 							<div class="case-studies-summary">
-								<span>12 Photos</span>
-								<h2>Company's Conference Room</h2>
 							</div>
 						</a>
 					</li>
 
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-5.jpg); ">
-							<a href="#" class="color-3">
+					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-5.jpg); ">
+						<a href="images/gallery-5.jpg" class="popup-btn" title="">
 								<div class="case-studies-summary">
-									<span>50 Photos</span>
-									<h2>Useful baskets</h2>
 								</div>
 							</a>
 						</li>
 						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-6.jpg); ">
-							<a href="#" class="color-4">
+							<a href="images/gallery-6.jpg" class="popup-btn" title="">
 								<div class="case-studies-summary">
-									<span>45 Photos</span>
-									<h2>Skater man in the road</h2>
 								</div>
 							</a>
 						</li>
 
 						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-7.jpg); ">
-							<a href="#" class="color-4">
+							<a href="images/gallery-7.jpg" class="popup-btn" title="">
 								<div class="case-studies-summary">
-									<span>35 Photos</span>
-									<h2>Two Glas of Juice</h2>
 								</div>
 							</a>
 						</li>
 
 						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-8.jpg); ">
-							<a href="#" class="color-5">
+							<a href="images/gallery-8.jpg" class="popup-btn" title="">
 								<div class="case-studies-summary">
-									<span>90 Photos</span>
-									<h2>Timer starts now!</h2>
 								</div>
 							</a>
 						</li>
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-9.jpg); ">
-							<a href="#" class="color-6">
+						<li href="gallery.html" class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-9.jpg); ">
+							<a href="gallery.html" class="" title="">
 								<div class="case-studies-summary">
-									<span>56 Photos</span>
-									<h2>Beautiful sunset</h2>
+									<span>255 immagini</span>
+									<h2>Vedi tutte</h2>
 								</div>
 							</a>
 						</li>
-					</ul>
+					 </ul>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div id="fh5co-counter" class="fh5co-bg fh5co-counter" style="background-image:url(images/img_bg_5.jpg);">
+	<!-- <div id="fh5co-counter" class="fh5co-bg fh5co-counter" style="background-image:url(images/img_bg_5.jpg);">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
@@ -437,15 +423,15 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<div id="fh5co-testimonial">
 		<div class="container">
 			<div class="row">
 				<div class="row animate-box">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<span>Best Wishes</span>
-						<h2>Friends Wishes</h2>
+						<span>Dicono di noi</span>
+						<h2>I migliori auguri dei nostri amici</h2>
 					</div>
 				</div>
 				<div class="row">
@@ -493,7 +479,7 @@
 		</div>
 	</div>
 
-	<div id="fh5co-services" class="fh5co-section-gray">
+	<!-- <div id="fh5co-services" class="fh5co-section-gray">
 		<div class="container">
 
 			<div class="row animate-box">
@@ -547,7 +533,7 @@
 
 
 		</div>
-	</div>
+	</div> -->
 
 
 	<div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/img_bg_4.jpg);">
@@ -555,8 +541,8 @@
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Are You Attending?</h2>
-					<p>Please Fill-up the form to notify you that you're attending. Thanks.</p>
+					<h2>Parteciperai?</h2>
+					<p>Ti preghiamo di confermarci la tua presenza al nostro matrimonio, grazie!</p>
 				</div>
 			</div>
 			<div class="row animate-box">
@@ -564,18 +550,14 @@
 					<form class="form-inline">
 						<div class="col-md-4 col-sm-4">
 							<div class="form-group">
-								<label for="name" class="sr-only">Name</label>
-								<input type="name" class="form-control" id="name" placeholder="Name">
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-4">
 							<div class="form-group">
-								<label for="email" class="sr-only">Email</label>
-								<input type="email" class="form-control" id="email" placeholder="Email">
+								<button type="submit" class="btn btn-default btn-block">RSVP</button>
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-4">
-							<button type="submit" class="btn btn-default btn-block">I am Attending</button>
 						</div>
 					</form>
 				</div>
@@ -634,6 +616,7 @@
 	<!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
 	<script src="js/simplyCountdown.js"></script>
 	<!-- Main -->
+	<script src="js/gallery_popup.js"></script>
 	<script src="js/main.js"></script>
 
 	<script>
