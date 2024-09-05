@@ -187,7 +187,6 @@
 		loaderPage();
 		counter();
 		counterWayPoint();
-		// masonry();
 	});
 
 
@@ -204,6 +203,14 @@ $(document).ready(function() {
 		} else {
 			$('.fh5co-nav').removeClass('scrolled');
 		}
+	});
+
+	var appo_container = document.querySelector('.portfolio-item');
+	var mason;
+	imagesLoaded( appo_container, function() {
+    var mason = new Masonry( appo_container, {
+        itemSelector: '.item'
+	   });
 	});
 
 	// Initialize offcanvas menu

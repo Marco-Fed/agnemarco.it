@@ -1732,29 +1732,6 @@
         day: d.getDate(),
         enableUtc: false
     });
-
-		;(function () {
-				'use strict';
-				var $mason =	$('.portfolio-item').masonry({
-					itemSelector: '.item',
-					percentPosition: true
-				})
-		})();
-
-		var $mason =	$('.portfolio-item').masonry({
-		  itemSelector: '.item',
-		  percentPosition: true
-		})
-
-		$mason.imagesLoaded().progress( function() {
-			$mason.masonry('layout');
-		});
-		$(document).ready(function() {
-			// layout Masonry after each image loads
-			$mason.imagesLoaded().progress( function() {
-			  $mason.masonry('layout');
-			});
-		});
 	</script>
 
 </body>
