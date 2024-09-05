@@ -1741,6 +1741,11 @@
 				})
 		})();
 
+		var $mason =	$('.portfolio-item').masonry({
+		  itemSelector: '.item',
+		  percentPosition: true
+		})
+
 		$mason.imagesLoaded().progress( function() {
 			$mason.masonry('layout');
 		});
