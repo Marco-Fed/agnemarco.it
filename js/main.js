@@ -170,6 +170,11 @@
 		$(window).stellar();
 	};
 
+	// var $mason =	$('.portfolio-item').masonry({
+	//   itemSelector: '.item',
+	//   percentPosition: true
+	// })
+
 	$(function() {
 		mobileMenuOutsideClick();
 		parallax();
@@ -182,9 +187,12 @@
 		loaderPage();
 		counter();
 		counterWayPoint();
+		// masonry();
 	});
 
+
 })();
+
 
 $(document).ready(function() {
 	$(window).scroll(function() {
@@ -207,6 +215,12 @@ $(document).ready(function() {
 		$('body').toggleClass('offcanvas');
 		$(this).toggleClass('active');
 	});
+
+
+	// layout Masonry after each image loads
+	// $mason.imagesLoaded().progress( function() {
+	//   $mason.masonry('layout');
+	// });
 
 	var navToggle = $('.fh5co-nav-toggle');
 });

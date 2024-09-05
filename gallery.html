@@ -46,8 +46,9 @@
 	<!-- Icomoon Icon Fonts-->
 	<link rel="stylesheet" href="css/icomoon.css">
 	<!-- Bootstrap  -->
+	<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" sync></script>
-	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+		<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 
 	<!-- Magnific Popup -->
@@ -117,7 +118,7 @@
 	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/img_bg_2.jpg);" data-stellar-background-ratio="2">
 		<div class="overlay"></div>
 		<div class="container">
-			<div class="row">
+			<div class="row d-flex justify-content-center">
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
@@ -159,7 +160,7 @@
 <body data-new-gr-c-s-check-loaded="14.1192.0" data-gr-ext-installed class>
 
 			<div class="container">
-				<div class="row">
+				<div class="row d-flex justify-content-center">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 						<p></p>
 						<span>Galleria</span>
@@ -1715,7 +1716,8 @@
 	<!-- Magnific Popup -->
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/magnific-popup-options.js"></script>
-
+	<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" sync></script>
 	<!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
 	<script src="js/simplyCountdown.js"></script>
 	<!-- Main -->
@@ -1740,11 +1742,22 @@
         enableUtc: false
     });
 
-		$('#manso_gallery').imagesLoaded( function() {
-		  $('.portfolio-item').masonry({
-		    itemSelector: '.portfolio-item',
-		    percentPosition: true
-		  })
+		;(function () {
+				'use strict';
+				var $mason =	$('.portfolio-item').masonry({
+					itemSelector: '.item',
+					percentPosition: true
+				})
+		})();
+
+		$mason.imagesLoaded().progress( function() {
+			$mason.masonry('layout');
+		});
+		$(document).ready(function() {
+			// layout Masonry after each image loads
+			$mason.imagesLoaded().progress( function() {
+			  $mason.masonry('layout');
+			});
 		});
 	</script>
 
