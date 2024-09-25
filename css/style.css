@@ -2176,7 +2176,7 @@ body{
 }
 .fh5co-heading .citazione{
   font-style: italic;
-  font-family: 'Sacramento';
-  font-size: 28px;
+  /* font-family: 'Sacramento'; */
+  font-size: 21px;
   line-height: 130%;
 }
