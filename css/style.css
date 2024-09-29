@@ -1146,28 +1146,28 @@ form label {
   /* words */
 }
 
-#fh5co-testimonial,
+#dicono-di-noi,
 #my-cerimony,
 #my-party,
-#fh5co-started,
-#fh5co-footer,
+#RSVP,
+#my-footer,
 #my-event,
 #our_story,
-#fh5co-couple,
+#chi-siamo,
 #my-gallery,
 .fh5co-section {
   padding: 7em 0;
   clear: both;
 }
 @media screen and (max-width: 768px) {
-  #fh5co-testimonial,
+  #dicono-di-noi,
   #my-cerimony,
   #my-party,
-  #fh5co-started,
-  #fh5co-footer,
+  #RSVP,
+  #my-footer,
   #my-event,
   #our_story,
-  #fh5co-couple,
+  #chi-siamo,
   #my-gallery,
   #my-regali,
   .fh5co-section {
@@ -1366,24 +1366,24 @@ form label {
   color: rgba(0, 0, 0, 0.4);
 }
 
-#fh5co-testimonial .wrap-testimony {
+#dicono-di-noi .wrap-testimony {
   position: relative;
 }
-#fh5co-testimonial .wrap-testimony .testimony-slide {
+#dicono-di-noi .wrap-testimony .testimony-slide {
   text-align: center;
 }
-#fh5co-testimonial .wrap-testimony .testimony-slide span {
+#dicono-di-noi .wrap-testimony .testimony-slide span {
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 700;
   display: block;
 }
-#fh5co-testimonial .wrap-testimony .testimony-slide span a.twitter {
+#dicono-di-noi .wrap-testimony .testimony-slide span a.twitter {
   color:#115e09;
   font-weight: 300;
 }
-#fh5co-testimonial .wrap-testimony .testimony-slide figure {
+#dicono-di-noi .wrap-testimony .testimony-slide figure {
   margin-bottom: 10px;
   display: -moz-inline-stack;
   display: inline-block;
@@ -1392,7 +1392,7 @@ form label {
   width: 100px;
   height: 100px;
 }
-#fh5co-testimonial .wrap-testimony .testimony-slide figure img {
+#dicono-di-noi .wrap-testimony .testimony-slide figure img {
   width: 100px;
   height: 100px;
   -webkit-border-radius: 50%;
@@ -1400,7 +1400,7 @@ form label {
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
-#fh5co-testimonial .wrap-testimony .testimony-slide blockquote {
+#dicono-di-noi .wrap-testimony .testimony-slide blockquote {
   border: none;
   margin: 30px auto;
   width: 50%;
@@ -1411,30 +1411,30 @@ form label {
   border-radius: 4px;
 }
 @media screen and (max-width: 992px) {
-  #fh5co-testimonial .wrap-testimony .testimony-slide blockquote {
+  #dicono-di-noi .wrap-testimony .testimony-slide blockquote {
     width: 100%;
   }
 }
-#fh5co-testimonial .wrap-testimony .testimony-slide blockquote p {
+#dicono-di-noi .wrap-testimony .testimony-slide blockquote p {
   font-style: italic;
   color: #8f989f;
   font-size: 20px;
   line-height: 1.6em;
 }
-#fh5co-testimonial .wrap-testimony .testimony-slide.active {
+#dicono-di-noi .wrap-testimony .testimony-slide.active {
   display: block;
 }
-#fh5co-testimonial .wrap-testimony .arrow-thumb {
+#dicono-di-noi .wrap-testimony .arrow-thumb {
   position: absolute;
   top: 40%;
   display: block;
   width: 100%;
 }
-#fh5co-testimonial .wrap-testimony .arrow-thumb a {
+#dicono-di-noi .wrap-testimony .arrow-thumb a {
   font-size: 32px;
   color: #dadada;
 }
-#fh5co-testimonial .wrap-testimony .arrow-thumb a:hover, #fh5co-testimonial .wrap-testimony .arrow-thumb a:focus, #fh5co-testimonial .wrap-testimony .arrow-thumb a:active {
+#dicono-di-noi .wrap-testimony .arrow-thumb a:hover, #dicono-di-noi .wrap-testimony .arrow-thumb a:focus, #dicono-di-noi .wrap-testimony .arrow-thumb a:active {
   text-decoration: none;
 }
 
@@ -1491,10 +1491,10 @@ form label {
   margin-bottom: 10px;
 }
 
-#fh5co-started {
+#RSVP {
   position: relative;
 }
-#fh5co-started .overlay {
+#RSVP .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -1502,13 +1502,13 @@ form label {
   bottom: 0;
   background: rgba(0, 0, 0, 0.4);
 }
-#fh5co-started .fh5co-heading h2 {
+#RSVP .fh5co-heading h2 {
   color: #fff;
 }
-#fh5co-started .fh5co-heading p {
+#RSVP .fh5co-heading p {
   color: rgba(255, 255, 255, 0.5);
 }
-#fh5co-started .form-control {
+#RSVP .form-control {
   background: rgba(255, 255, 255, 0.2);
   border: none !important;
   color: #fff;
@@ -1518,24 +1518,24 @@ form label {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-#fh5co-started .form-control::-webkit-input-placeholder {
+#RSVP .form-control::-webkit-input-placeholder {
   color: #fff;
 }
-#fh5co-started .form-control:-moz-placeholder {
+#RSVP .form-control:-moz-placeholder {
   /* Firefox 18- */
   color: #fff;
 }
-#fh5co-started .form-control::-moz-placeholder {
+#RSVP .form-control::-moz-placeholder {
   /* Firefox 19+ */
   color: #fff;
 }
-#fh5co-started .form-control:-ms-input-placeholder {
+#RSVP .form-control:-ms-input-placeholder {
   color: #fff;
 }
-#fh5co-started .form-control:focus {
+#RSVP .form-control:focus {
   background: rgba(255, 255, 255, 0.3);
 }
-#fh5co-started .btn {
+#RSVP .btn {
   height: 54px;
   border: none !important;
   background:#115e09;
@@ -1548,29 +1548,29 @@ form label {
   width: auto;
   margin: auto;
 }
-#fh5co-started .form-inline .form-group {
+#RSVP .form-inline .form-group {
   width: 100% !important;
   margin-bottom: 10px;
 }
-#fh5co-started .form-inline .form-group .form-control {
+#RSVP .form-inline .form-group .form-control {
   width: 100%;
 }
-#fh5co-started .fh5co-heading {
+#RSVP .fh5co-heading {
   margin-bottom: 30px;
 }
-#fh5co-started .fh5co-heading h2 {
+#RSVP .fh5co-heading h2 {
   margin-bottom: 0;
 }
 
 @media screen and (max-width: 768px) {
-  #fh5co-footer .copyright .pull-left,
-  #fh5co-footer .copyright .pull-right {
+  #my-footer .copyright .pull-left,
+  #my-footer .copyright .pull-right {
     float: none !important;
     text-align: center;
   }
 }
 
-#fh5co-testimonial .btn {
+#dicono-di-noi .btn {
   height: 54px;
   border: none !important;
   background:#115e09;
@@ -1598,7 +1598,7 @@ form label {
   margin: auto;
 }
 
-#fh5co-footer .copyright .block {
+#my-footer .copyright .block {
   display: block;
 }
 
