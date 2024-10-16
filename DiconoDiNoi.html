@@ -98,61 +98,83 @@
 	</header>
 
 
-
-			<div class="fh5co-section">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-6 col-md-push-6 animate-box">
-							<h3>Scrivici un messaggio!</h3>
-
-						<form id="contact-form" method="POST" action="https://formspree.io/f/xzzpwbkd">
-						  <div class="form-row form-error" style="display:none;"></div>
-						  <div class="form-row">
-								<div class="form-group col-md-6 col-sm-6">
-							    <label for="contact-form-name">Nome:</label>
-							    <input id="contact-form-name" class="form-control" type="text" name="nome" required>
-						  	</div>
-								<div class="form-group col-md-6 col-sm-6">
-							    <label for="contact-form-surname">Cognome:</label>
-							    <input id="contact-form-surname" class="form-control" type="text" name="cognome">
-						  	</div>
+			<!-- Dicono di noi -->
+			<div id="dicono-di-noi">
+				<div class="container" style="padding-left: 30px;padding-right: 30px;">
+					<div class="row d-flex justify-content-center">
+						<div class="row animate-box">
+							<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+								<span>Dicono di noi</span>
+								<h2>Racconti e auguri dai nostri amici</h2>
 							</div>
-						  <div class="form-row">
-								<div class="form-group col-md-6 col-sm-6">
-							    <label for="contact-form-email">Email:</label>
-							    <input id="contact-form-email" class="form-control" type="email" name="email" required>
-						  	</div>
-								<div class="form-group col-md-6 col-sm-6">
-							    <label for="contact-form-phone">Telefono:</label>
-							    <input id="contact-form-phone" class="form-control" type="tel" name="telefono">
-						  	</div>
-							</div>
-
-							<div class="form-group col-md-12">
-								<textarea class="form-control" id="contact-form-message" rows="3" placeholder="Inserisci qui il tuo messaggio" name="message"></textarea>
-							</div>
-
-							<div class="form-row col-md-12">
-								<button type="submit" class="btn btn-default btn-block" style="margin-bottom: 50px;">Invia!</button>
-							</div>
-						</form>
-
-
 						</div>
-						<div class="col-md-5 col-md-pull-5 animate-box">
+						<div class="row d-flex justify-content-center">
+							<div class="col-md-12 animate-box">
+								<div class="wrap-testimony">
+									<div class="owl-carousel-fullwidth">
+										<div class="item">
+											<div class="testimony-slide active text-center">
+												<figure>
+													<img src="Gallery/095.jpg" alt="user" style="object-fit:cover; float:left;">
+												</figure>
+												<span>ScSc</span>
+												<blockquote>
+													<p>Ho dormito nel loro stesso letto, ve li consiglio</p>
+												</blockquote>
+											</div>
+										</div>
+										<div class="item">
+											<div class="testimony-slide active text-center">
+												<figure>
+													<img src="images/couple-3.jpg" alt="user">
+												</figure>
+												<span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
+												<blockquote>
+													<p>"Far far away, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
+												</blockquote>
+											</div>
+										</div>
 
-							<div class="fh5co-contact-info">
-								<h3>Informazioni di contatto</h3>
-								<ul>
-									<li class="address"><a href="https://maps.app.goo.gl/jbU9ocBKH2QLGSAH9">Parrocchia San Nicola in Dergano, <br> Via Livigno, 21 – Milano</a></li>
-									<li class="phone"><a href="tel://00393318789856">+ 39 331 8789856</a></li>
-									<li class="email"><a href="mailto:info@agnemarco.it">info@agnemarco.it</a></li>
-									<li class="url"><a href="http://agnemarco.it">agnemarco.it</a></li>
-								</ul>
+									</div>
+								</div>
 							</div>
-
 						</div>
 					</div>
+
+					<div class="row d-flex justify-content-center">
+							<div class="row animate-box">
+								<div class="col-md-8 col-md-offset-2 text-center align-items-end fh5co-heading " style="margin-top: 5em; margin-bottom: 1em;">
+									<span>Vuoi lasciare un pensiero?</span>
+								</div>
+								<form method="POST" action="https://formspree.io/f/xvgpygaa">
+
+									<div class="form-row">
+										<div class="form-group col-md-4 col-sm-4">
+											<label for="inputNome">Nome</label>
+											<input id="inputNome" type="text" class="form-control" name="nome">
+										</div>
+										<div class="form-group col-md-4 col-sm-4">
+											<label for="inputCognome">Cognome</label>
+											<input id="inputCognome" type="text" class="form-control" name="cognome">
+										</div>
+										<div class="form-group col-md-4 col-sm-4">
+											<label for="inputNickname">Nickname</label>
+											<input id="inputNickname" type="text" class="form-control" name="nickname">
+										</div>
+									</div>
+
+
+									<div class="form-group col-md-12">
+										<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Inserisci qui il tuo messaggio" name="augurio"></textarea>
+									</div>
+
+									<div class="form-row col-md-12">
+										<button type="submit" class="#RSVP btn btn-default btn-block">Invia!</button>
+									</div>
+
+								</form>
+							</div>
+						</div>
 
 				</div>
 			</div>

@@ -192,6 +192,20 @@
 
 })();
 
+function enable_button(checkbx,button_id) {
+  var btn = document.getElementById(button_id);
+    btn.disabled = "";
+}
+function disable_button(checkbx,button_id) {
+  var btn = document.getElementById(button_id);
+    btn.disabled = "disabled";
+}
+
+function clear_button(checkbx,button_id) {
+  var ele = document.getElementsByName(button_id);
+	for(var i=0;i<ele.length;i++)
+			ele[i].checked = false;
+}
 
 $(document).ready(function() {
 	$(window).scroll(function() {
@@ -222,12 +236,6 @@ $(document).ready(function() {
 		$('body').toggleClass('offcanvas');
 		$(this).toggleClass('active');
 	});
-
-
-	// layout Masonry after each image loads
-	// $mason.imagesLoaded().progress( function() {
-	//   $mason.masonry('layout');
-	// });
 
 	var navToggle = $('.fh5co-nav-toggle');
 });

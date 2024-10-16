@@ -97,95 +97,82 @@
 		</div>
 	</header>
 
+	<!-- RSVP -->
+	<div id="RSVP" class="fh5co-bg" style="background-image:url(images/castello2.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<span>RSVP</span>
+					<h2>Parteciperai?</h2>
+					<p>Ti preghiamo di compilare un form per ogni invitato al ricevimento, grazie!</p>
+				</div>
+			</div>
+			<div class="row animate-box">
+				<div class="col-md-10 col-md-offset-1">
 
-
-			<div class="fh5co-section">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-6 col-md-push-6 animate-box">
-							<h3>Scrivici un messaggio!</h3>
-
-						<form id="contact-form" method="POST" action="https://formspree.io/f/xzzpwbkd">
-						  <div class="form-row form-error" style="display:none;"></div>
-						  <div class="form-row">
-								<div class="form-group col-md-6 col-sm-6">
-							    <label for="contact-form-name">Nome:</label>
-							    <input id="contact-form-name" class="form-control" type="text" name="nome" required>
-						  	</div>
-								<div class="form-group col-md-6 col-sm-6">
-							    <label for="contact-form-surname">Cognome:</label>
-							    <input id="contact-form-surname" class="form-control" type="text" name="cognome">
-						  	</div>
+					<form id="contact-form" method="POST" action="https://formspree.io/f/xjkvvebz">
+						<div class="form-row form-error" style="display:none;"></div>
+						<div class="form-row">
+							<div class="form-group col-md-6 col-sm-6">
+								<label class="label_rsvp" for="contact-form-name">Nome:</label>
+								<input id="contact-form-name" class="form-control" type="text" name="Nome" required>
 							</div>
-						  <div class="form-row">
-								<div class="form-group col-md-6 col-sm-6">
-							    <label for="contact-form-email">Email:</label>
-							    <input id="contact-form-email" class="form-control" type="email" name="email" required>
-						  	</div>
-								<div class="form-group col-md-6 col-sm-6">
-							    <label for="contact-form-phone">Telefono:</label>
-							    <input id="contact-form-phone" class="form-control" type="tel" name="telefono">
-						  	</div>
+							<div class="form-group col-md-6 col-sm-6">
+								<label class="label_rsvp" for="contact-form-surname">Cognome:</label>
+								<input id="contact-form-surname" class="form-control" type="text" name="Cognome" required>
 							</div>
-
-							<div class="form-group col-md-12">
-								<textarea class="form-control" id="contact-form-message" rows="3" placeholder="Inserisci qui il tuo messaggio" name="message"></textarea>
-							</div>
-
-							<div class="form-row col-md-12">
-								<button type="submit" class="btn btn-default btn-block" style="margin-bottom: 50px;">Invia!</button>
-							</div>
-						</form>
-
-
 						</div>
-						<div class="col-md-5 col-md-pull-5 animate-box">
-
-							<div class="fh5co-contact-info">
-								<h3>Informazioni di contatto</h3>
-								<ul>
-									<li class="address"><a href="https://maps.app.goo.gl/jbU9ocBKH2QLGSAH9">Parrocchia San Nicola in Dergano, <br> Via Livigno, 21 – Milano</a></li>
-									<li class="phone"><a href="tel://00393318789856">+ 39 331 8789856</a></li>
-									<li class="email"><a href="mailto:info@agnemarco.it">info@agnemarco.it</a></li>
-									<li class="url"><a href="http://agnemarco.it">agnemarco.it</a></li>
-								</ul>
+						<div class="form-row">
+							<div class="form-group col-md-6 col-sm-6">
+								<label class="label_rsvp" for="">Parteciperai al ricevimento?</label>
+				        <div class="form-check">
+				          <input class="form-check-input" type="radio" name="Presenza" id="rsvp-presenza-sì" value="Sì" onclick="disable_button(this, 'rsvp-invia'); enable_button(this, 'rsvp-allergie_sì');enable_button(this, 'rsvp-allergie_no')">
+				          <label class="form-check-label label_rsvp" for="rsvp-presenza-sì">
+				            Sarò felice di partecipare!
+				          </label>
+				        </div>
+				        <div class="form-check">
+				          <input class="form-check-input" type="radio" name="Presenza" id="rsvp-presenza-no" value="No" onclick="enable_button(this, 'rsvp-invia'); disable_button(this, 'rsvp-allergie_sì');disable_button(this, 'rsvp-allergie_no'); clear_button(this,'Allergie')">
+				          <label class="form-check-label label_rsvp" for="rsvp-presenza-no">
+				            Purtroppo non potrò partecipare.
+				          </label>
+				        </div>
 							</div>
 
+							<div class="form-group col-md-6 col-sm-6">
+								<label class="label_rsvp" for="">Hai allergie e/o intolleranze?</label>
+
+								<div class="form-check">
+								  <input disabled class="form-check-input" type="radio" name="Allergie" id="rsvp-allergie_sì" value="Sì" onclick="enable_button(this, 'rsvp-descrizione-allergie');enable_button(this, 'rsvp-invia')">
+								  <label class="form-check-label label_rsvp" for="rsvp-allergie_sì">Sì</label>
+								</div>
+								<div class="form-check">
+								  <input disabled class="form-check-input" type="radio" name="Allergie" id="rsvp-allergie_no" value="No" onclick="enable_button(this, 'rsvp-invia');disable_button(this, 'rsvp-descrizione-allergie')">
+								  <label class="form-check-label label_rsvp" for="rsvp-allergie_no">No</label>
+								</div>
+							</div>
 						</div>
-					</div>
+						<div class="form-group col-md-12">
+							<label class="form-check-label label_rsvp" for="rsvp-note">Descrivi le tue allergie e/o intolleranze </label>
+							<textarea disabled class="form-control" id="rsvp-descrizione-allergie" rows="3" placeholder="" name="Descrizione allergie" required></textarea>
+						</div>
+						<div class="form-group col-md-12">
+							<label class="form-check-label label_rsvp" for="rsvp-note">Altre note e/o auguri per gli sposi</label>
+							<textarea class="form-control" id="rsvp-note" rows="3" placeholder="" name="Note e auguri"></textarea>
+						</div>
+
+						<div class="form-row col-md-12">
+							<button disabled type="submit" id="rsvp-invia" class="btn btn-default btn-block" style="margin-top: 50px;">Invia!</button>
+						</div>
+					</form>
+
 
 				</div>
 			</div>
+		</div>
+	</div>
 
-			<!-- RSVP -->
-			<div id="RSVP" class="fh5co-bg" style="background-image:url(images/castello2.jpg);">
-				<div class="overlay"></div>
-				<div class="container">
-					<div class="row animate-box">
-						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-							<h2>Parteciperai?</h2>
-							<p>Ti preghiamo di confermarci la tua presenza al nostro matrimonio, grazie!</p>
-						</div>
-					</div>
-					<div class="row animate-box">
-						<div class="col-md-10 col-md-offset-1">
-							<form class="form-inline">
-								<div class="col-md-4 col-sm-4">
-									<div class="form-group">
-									</div>
-								</div>
-								<div class="col-md-4 col-sm-4">
-									<div class="form-group col-md-12">
-										<a href="rsvp.html" class="btn btn-default btn-block" style="padding-top:15px;width: 146.5px;">RSVP</a>
-									</div>
-								</div>
-								<div class="col-md-4 col-sm-4">
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
 
 			<!-- Footer -->
 			<footer id="my-footer" role="contentinfo" style="padding: 2em 0;">
